@@ -38,8 +38,10 @@ public class Menu {
                     listarHorariosVoos();
                     break;
                 case 2:
+                    listarDestinos();
                     break;
                 case 3:
+                    listarDatas();
                     break;
                 case 4:
                     listarCompanhiasAereas();
@@ -51,7 +53,8 @@ public class Menu {
     private void listarHorariosVoos() {
         System.out.println("Lista de Horários de Voos:");
         for (Voo voo : voos) {
-            voo.getHoraPartida();
+            System.out.println("Companhia Aérea: " + voo.getNomeCompanhia());
+            System.out.println("Hora do voo: " + voo.getHoraPartida());
             System.out.println();
         }
     }
@@ -63,4 +66,26 @@ public class Menu {
             System.out.println();
         }
     }
+
+    private void listarDestinos() {
+        System.out.println("Lista de Destinos: ");
+        for (Voo voo : voos) {
+            System.out.println("Companhia Aérea: " + voo.getNomeCompanhia());
+            System.out.println("Horário Voo: " + voo.getHoraPartida());
+            System.out.println("Local de partida: " + voo.getOrigem());
+            System.out.println("Destino: " + voo.getDestino());
+            System.out.println();
+        }
+    }
+
+    private void listarDatas() {
+        System.out.println("Data dos voos: ");
+        for (Voo voo : voos) {
+            System.out.println("Destino: " + voo.getDestino());
+            System.out.println("Data Voo: " + voo.getDataPartida());
+            System.out.println("Horário Voo: " + voo.getHoraPartida());
+            System.out.println();
+        }
+    }
+
 }
