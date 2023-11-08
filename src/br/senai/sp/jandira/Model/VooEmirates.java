@@ -8,7 +8,7 @@ import java.util.Date;
         private int capacidadePassageiros;
 
         public VooEmirates(String numeroVoo, String origem, String destino, String dataPartida, String horaPartida, int capacidadePassageiros) {
-            super("BB-8", "Congonhas", "Qatar", "12-09-2023", "12h47");
+            super(numeroVoo, origem, destino, dataPartida, horaPartida);
             this.capacidadePassageiros = capacidadePassageiros;
         }
 

@@ -4,7 +4,7 @@ public class VooAzul extends Voo {
     private int capacidadePassageiros;
 
     public VooAzul(String numeroVoo, String origem, String destino, String dataPartida, String horaPartida, int capacidadePassageiros) {
-        super("C3PO", "São Paulo", "Natal", "23-10-2023", "15h00");
+        super(numeroVoo, origem, destino, dataPartida, horaPartida);
         this.capacidadePassageiros = capacidadePassageiros;
     }
 

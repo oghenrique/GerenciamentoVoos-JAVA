@@ -4,7 +4,7 @@ public class VooDelta extends Voo {
     private int capacidadePassageiros;
 
     public VooDelta(String numeroVoo, String origem, String destino, String dataPartida, String horaPartida, int capacidadePassageiros) {
-        super("R2D2", "Guarulhos", "Paris", "17-11-2023", "08h00");
+        super(numeroVoo, origem, destino, dataPartida, horaPartida);
         this.capacidadePassageiros = capacidadePassageiros;
     }
 

@@ -8,6 +8,11 @@ public class Menu {
     private List<Voo> voos = new ArrayList<>();
 
     public void Menu() {
+
+        voos.add(new VooEmirates("BB-8", "Congonhas", "Qatar", "12-09-2023", "12h47", 300));
+        voos.add(new VooDelta("R2D2", "Guarulhos", "Paris", "17-11-2023", "08h00", 250));
+        voos.add(new VooAzul("C3PO", "São Paulo", "Natal", "23-10-2023", "15h00", 200));
+
         Scanner teclado = new Scanner(System.in);
         boolean sair = true;
 
@@ -33,10 +38,10 @@ public class Menu {
                     listarHorariosVoos();
                     break;
                 case 2:
-                    // Implemente a listagem de destinos aqui
+
                     break;
                 case 3:
-                    // Implemente a listagem de datas de partida aqui
+                   
                     break;
                 case 4:
                     listarCompanhiasAereas();
@@ -48,7 +53,7 @@ public class Menu {
     private void listarHorariosVoos() {
         System.out.println("Lista de Horários de Voos:");
         for (Voo voo : voos) {
-            voo.exibirDetalhes();
+            voo.getHoraPartida();
             System.out.println();
         }
     }
@@ -56,7 +61,6 @@ public class Menu {
     private void listarCompanhiasAereas() {
         System.out.println("Lista de Companhias Aéreas: ");
         for (Voo voo : voos) {
-            System.out.println("Número do Voo: " + voo.getNumeroVoo());
             System.out.println("Companhia Aérea: " + voo.getNomeCompanhia());
             System.out.println();
         }
