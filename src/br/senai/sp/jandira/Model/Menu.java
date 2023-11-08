@@ -33,10 +33,10 @@ public class Menu {
                     listarHorariosVoos();
                     break;
                 case 2:
-                    // Implemente a listagem de destinos aqui
+                    
                     break;
                 case 3:
-                    // Implemente a listagem de datas de partida aqui
+                    
                     break;
                 case 4:
                     listarCompanhiasAereas();
